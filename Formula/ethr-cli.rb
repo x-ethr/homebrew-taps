@@ -5,7 +5,7 @@
 class EthrCli < Formula
   desc "ETHR Utilities CLI"
   homepage "https://github.com/x-ethr/ethr-cli"
-  version "0.2.13"
+  version "0.2.14"
   license "BSD 3-Clause License"
 
   depends_on "bash" => :optional
@@ -15,16 +15,16 @@ class EthrCli < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.13/ethr-cli-darwin-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "366f0d3f5dad899bbfff4e0f22c8d972870f061901bdd9261e5b29688f16a4c3"
+      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.14/ethr-cli-darwin-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "1982083099bead564f4901ebd3479c9ce2c018be8c8eb9534d687b34abab2eed"
 
       def install
         bin.install "ethr-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.13/ethr-cli-darwin-x86-64.tar.gz", using: CurlDownloadStrategy
-      sha256 "803d3131d0fc9e456e830092ab8500137a7969090e36d3660b85e6f1d3002339"
+      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.14/ethr-cli-darwin-x86-64.tar.gz", using: CurlDownloadStrategy
+      sha256 "5904bb2580c8278dd9f004da18b2a7eb27c1bf33824924217f157483948f7677"
 
       def install
         bin.install "ethr-cli"
@@ -34,16 +34,16 @@ class EthrCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.13/ethr-cli-linux-arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "ed3f12367b66df08951e6ea3a2c5baa2fb0830d80d2dbe5165a557492ec0302b"
+      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.14/ethr-cli-linux-arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9d482e6447dad5370f05e9887141c6b677ca5a12e35414e265da3d5c79490d9e"
 
       def install
         bin.install "ethr-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.13/ethr-cli-linux-x86-64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5727979807a0e30c5872313974312b0320e1c2ca3a385c3e4169d0f2c29f8e83"
+      url "https://github.com/x-ethr/ethr-cli/releases/download/v0.2.14/ethr-cli-linux-x86-64.tar.gz", using: CurlDownloadStrategy
+      sha256 "a2c70f7cdd7724ec60bf3cdb5b8b6a3002ee5da8c27bf1dfa6dcbdecd70712c1"
 
       def install
         bin.install "ethr-cli"
